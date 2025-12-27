@@ -1,0 +1,16 @@
+# streamlit
+# audio-recorder-streamlit
+# openai-whisper
+# google-generativeai
+# python-dotenv
+# requests
+# soundfile
+
+streamlit
+audio-recorder-streamlit
+openai-whisper
+google-generativeai
+python-dotenv
+requests
+soundfile
+elevenlabs
