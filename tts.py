@@ -3,6 +3,7 @@ import os
 import tempfile
 import uuid
 from dotenv import load_dotenv
+import streamlit as st
 
 load_dotenv()
 voice_id = "gO8Kb3hHPEPElVxVHDwT"
@@ -18,7 +19,7 @@ def speak(text, output=None):
         output = f"{base}_{unique_id}{ext}"
     url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
     headers = {
-        "xi-api-key": os.getenv("ELEVEN_API_KEY"),
+        "xi-api-key": st.secrets["ELEVEN_API_KEY"],
         "Content-Type": "application/json"
     }
     data = {
