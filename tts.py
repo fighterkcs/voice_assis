@@ -2,10 +2,8 @@ import requests
 import os
 import tempfile
 import uuid
-from dotenv import load_dotenv
 import streamlit as st
 
-load_dotenv()
 voice_id = "gO8Kb3hHPEPElVxVHDwT"
 
 def speak(text, output=None):
