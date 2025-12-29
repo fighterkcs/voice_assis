@@ -50,7 +50,7 @@ if audio:
                         if not reply or not reply.strip():
                             st.warning("⚠️ No response generated. Please try again.")
                             st.stop()
-                        with st.expander("🕉️ Krishna", expanded=False):
+                        with st.expander(" Krishna", expanded=False):
                             st.write(reply)
                         with st.spinner("Speaking..."):
                             try:
