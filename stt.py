@@ -5,7 +5,7 @@ import os
 import tempfile
 import shutil
 
-model = whisper.load_model("base")
+model = whisper.load_model("tiny")
 
 def _check_ffmpeg_available():
     return shutil.which("ffmpeg") is not None
